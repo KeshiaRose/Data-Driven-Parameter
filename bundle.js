@@ -36116,6 +36116,73 @@ var DynamicParameter = /** @class */ (function (_super) {
 
 /***/ }),
 
+/***/ "./src/components/Home.tsx":
+/*!*********************************!*\
+  !*** ./src/components/Home.tsx ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+var Home = /** @class */ (function (_super) {
+    __extends(Home, _super);
+    function Home() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Home.prototype.render = function () {
+        return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null,
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("style", { dangerouslySetInnerHTML: { __html: "\n        html,\n        body {\n            margin: 0;\n            padding: 0;\n            height: 100%;\n            width: 100%;\n            background: linear-gradient(to bottom left, #28D5D4, #66A2DE, #9778E6);\n            color: #fff;\n            font-family: 'Benton Sans Light', 'Segoe UI Light', sans-serif;\n        }\n        \n        .icontainer {\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            height: 100%;\n        }\n        \n        .box {\n            background: rgba(255, 255, 255, 0.041);\n            border: 1px solid rgba(255, 255, 255, 0.116);\n            border-radius: 4px;\n            width: 1000px;\n            padding: 20px;\n            margin: 20px;\n        }\n        \n        .iheader {\n            font-size: 28px;\n        }\n        \n        .big {\n            font-size: 20px;\n        }\n        \n        a {\n            color: #fff;\n            font-weight: bold;\n        }\n        \n        a:hover {\n            text-decoration: none;\n        }\n        \n        .gh {\n            text-align: center;\n            font-size: 14px;\n        }\n    " } }),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "icontainer" },
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "box" },
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("span", { className: "iheader" }, "Data Driven Parameters"),
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "This extension allows you to add a parameter to a Tableau dashboard whose domain is based on your data. Added a new product line? No longer do you need to manually edit the parameter to update it, with this extension your parameter values update automatically!"),
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", { className: "big" }, "Installing the Extension"),
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null,
+                        "Download and install the 2018.2 Beta version of Tableau Desktop from the ",
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", { href: "https://prerelease.tableau.com" }, "Tableau Beta"),
+                        " site. Under ",
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("strong", null, "Download Beta 2"),
+                        ", click ",
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("strong", null, "Tableau Desktop"),
+                        " and download the right version for your machine."),
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null,
+                        "Download the Data Driven Parameter ",
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", { href: "https://keshiarose.github.io/Data-Driven-Parameter/DataDrivenParameter.trex" }, "manifest file"),
+                        "."),
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", { className: "big" }, "Using the Extension"),
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ol", null,
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, "Create an open input (All) parameter with a data type matching the field you want to use to populate it"),
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, "Drag in a new Extension object to your dashboard"),
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, "Find the manifest (.trex) file you downloaded above"),
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, "Select the parameter you created above for the extension to manipulate"),
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, "Select the data source that holds the field you want to base your parameter on (if only one data source present, the extension will auto select it)"),
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, "Select the field you want to base your parameter on"),
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, "Optional: If you want your parameter to only contain relevant values, check the box and select the worksheet that has the filters you want to affect the data driven parameter"),
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null, "Click 'OK'")),
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "gh" },
+                        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", { href: "https://github.com/KeshiaRose/Data-Driven-Parameter" }, "View on GitHub"))))));
+    };
+    return Home;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+/* harmony default export */ __webpack_exports__["default"] = (Home);
+
+
+/***/ }),
+
 /***/ "./src/index.tsx":
 /*!***********************!*\
   !*** ./src/index.tsx ***!
@@ -36132,6 +36199,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 /* harmony import */ var _components_DynamicParameter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/DynamicParameter */ "./src/components/DynamicParameter.tsx");
 /* harmony import */ var _components_Configure__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Configure */ "./src/components/Configure.tsx");
+/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Home */ "./src/components/Home.tsx");
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -36147,8 +36215,10 @@ var __extends = (undefined && undefined.__extends) || (function () {
 
 
 
+
 // import registerServiceWorker from './registerServiceWorker';
 var PrimaryLayout = function () { return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null,
+    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/", exact: true, component: _components_Home__WEBPACK_IMPORTED_MODULE_5__["default"] }),
     react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/param", component: _components_DynamicParameter__WEBPACK_IMPORTED_MODULE_3__["default"] }),
     react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], { path: "/config", component: _components_Configure__WEBPACK_IMPORTED_MODULE_4__["default"] }))); };
 var App = /** @class */ (function (_super) {
