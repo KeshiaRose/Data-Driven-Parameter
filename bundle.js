@@ -36045,7 +36045,7 @@ var DynamicParameter = /** @class */ (function (_super) {
     // Pops open the configure page
     DynamicParameter.prototype.configure = function () {
         var _this = this;
-        var popupUrl = window.location.origin + "/testing/Dynamic_Parameter/#/config";
+        var popupUrl = window.location.origin + "/Data-Driven-Parameter/#/config";
         var payload = "";
         // let h = Math.floor(500 / window.devicePixelRatio);
         // let w = Math.floor(450 / window.devicePixelRatio);
